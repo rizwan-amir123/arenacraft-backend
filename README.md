@@ -91,7 +91,7 @@ NestJS API Gateway
                  Anti-cheat + Telemetry Processing
 ```
                  
-#🏃 Local Quick Start Guide
+# 🏃 Local Quick Start Guide
 1. Start Infrastructure
 ```bash
 docker-compose up -d
@@ -119,7 +119,7 @@ Bootstrap test players and wallet balances:
 POST http://localhost:3000/dev/seed
 ```
 
-#📊 Key Features
+# 📊 Key Features
 - High-throughput wallet ledger system
 - Redis-based matchmaking (MMR sorted queues)
 - Distributed locking for race-condition prevention
@@ -127,7 +127,7 @@ POST http://localhost:3000/dev/seed
 - Anti-cheat background processing system
 - Scalable real-time backend architecture
 
-#⚠️ Design Philosophy
+# ⚠️ Design Philosophy
 
 This system prioritizes:
 
