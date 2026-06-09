@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: arenacraft_postgres
+    environment:
+      POSTGRES_USER: arenacraft_user
+      POSTGRES_PASSWORD: arenacraft_password
+      POSTGRES_DB: arenacraft_db
+    ports:
+      - "5433:5432" # <-- Changed local host port to 5433
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: arenacraft_redis
+    ports:
+      - "6380:6379" # <-- Changed local host port to 6380
+    volumes:
+      - redisdata:/data
+
+volumes:
+  pgdata:
+  redisdata:
